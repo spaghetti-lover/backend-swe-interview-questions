@@ -192,6 +192,7 @@ The answers to those questions are based on my humble knowledge. If you find som
    - How to know your query is using index?
    - How index work in this case: `WHERE age = 5` and `Where age > 5`? The complexity to go to the next record?
    - Indexing with char?
+   - Should we use index for all column?
 
 4. The complexity of SQL query? How to measure it? How SQL optimize a query?
 

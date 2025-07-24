@@ -128,6 +128,12 @@ We need to write a query that takes advantage of index if any.
 
 To be defined.
 
+## Should we use index for all column?
+
+No, we shouldn't. Use index too much will lead to these consequences:
+- **Indexes consume significant disk space**: each index is essentially a separate data structure that duplicates and organizes your column data. With indexes on every column, you could easily double or triple your database storage requirements.
+- **Long insert time**: Every INSERT, UPDATE, or DELETE operation must update not just the main table, but every single index. This creates a substantial overhead that can slow down data modification operations considerably.
+
 ## What is Database Replicating? When do we need it?
 
 Database replicating is the act of making one or many copies of a database to increase the availability of data.
